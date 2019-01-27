@@ -14,7 +14,7 @@ RUN apt-get update &&\
     apt-get clean &&\
     useradd -ms /bin/bash wallet
 
-VOLUME ["/home/wallet/.celer"]
+VOLUME ["/home/wallet/.celercore"]
 EXPOSE 13737/tcp 
 USER wallet 
 CMD celerd -printtoconsole
